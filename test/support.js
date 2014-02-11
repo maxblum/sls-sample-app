@@ -22,6 +22,7 @@ testData = {
 };
 
 before(function(done) {
+  this.timeout(10000);
   importer.on('error', done);
   importer.on('done', done);
 });
